@@ -112,7 +112,9 @@ nav button:hover {
 }
 
 .h-48 {
-  height: 12rem; /* Fixed height */
+  margin: auto;
+  height: 12rem;
+  width: 20rem; /* Fixed height */
 }
 
 .bg-gray-300 {
@@ -125,4 +127,76 @@ nav button:hover {
 
 .font-medium {
   font-weight: 500;
+}
+
+footer {
+  background-color: #E5E7EB; /* bg-gray-200 */
+  border-top: 1px solid #3B82F6; /* border-blue-400 */
+  padding: 2rem 0; /* py-8 */
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.space-x-4 > * {
+  margin-right: 1rem; /* space-x-4 */
+}
+
+.space-x-4 > :last-child {
+  margin-right: 0; /* Remove margin for the last item */
+}
+
+.w-16 {
+  width: 4rem; /* 64px */
+}
+
+.h-16 {
+  height: 4rem; /* 64px */
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.text-gray-700 {
+  color: #374151; /* Dark gray */
+}
+
+.text-gray-600 {
+  color: #4B5563; /* Medium gray */
+}
+
+.hover\:text-blue-500:hover {
+  color: #3B82F6; /* Blue on hover */
+}
+
+.mb-4 {
+  margin-bottom: 1rem; /* 16px */
+}
+
+.mt-4 {
+  margin-top: 1rem; /* 16px */
+}
+
+.px-4 {
+  padding-left: 1rem; /* 16px */
+  padding-right: 1rem; /* 16px */
+}
+
+.mt-3{
+  margin-top: 4rem;
 }
