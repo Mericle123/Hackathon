@@ -1,19 +1,21 @@
-import React, { useState, useEffect } from "react";
-import './App.css'
-// import Login from "./component/Login";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './App.css';
+import Home from './components/home/Home';  
+import Navbar from './components/navbar'; 
 
 function App() {
   return (
-    <>
-      
-      <h1>Vite + React</h1>
-      {/* <Routes> */}
-      {/* <Route path="/login" element={<Login />} /> */}
-      {/* </Routes> */}
-   
+    <Router>
+      <div> 
 
-    </>
-  )
+        <Routes>
+          <Route path="/" element={<Home />} /> 
+          {/* Other routes */}
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;

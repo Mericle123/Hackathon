@@ -2,6 +2,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import Navbar from '../navbar'; 
 
 import "./Home.css"
 class NFTGallery extends React.Component {
@@ -19,6 +20,10 @@ class NFTGallery extends React.Component {
     ];
 
     return (
+    <>
+    <div>
+    <Navbar /> 
+    </div>
       <div className="bg-gray-100 min-h-screen">
         <header className="p-4 bg-white shadow-md">
           <div className="text-lg font-bold">LOGO</div>
@@ -60,6 +65,7 @@ class NFTGallery extends React.Component {
           </section>
         </main>
       </div>
+      </>
     );
   }
 }
