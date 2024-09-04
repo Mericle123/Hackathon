@@ -2,6 +2,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import Navbar from '../navbar'; 
+import { faFacebookF, faInstagram, faYoutube, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import "./Home.css"
 class NFTGallery extends React.Component {
