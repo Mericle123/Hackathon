@@ -2,7 +2,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-import Navbar from '../navbar'; 
 
 import "./Home.css"
 class NFTGallery extends React.Component {
@@ -63,6 +62,34 @@ class NFTGallery extends React.Component {
               ))}
             </div>
           </section>
+    <footer class="bg-gray-200 border-t border-blue-400 py-8 text-center mt-3">
+        <div class="flex flex-col items-center">
+            <div class="w-16 h-16 bg-black rounded-full mb-4"></div>
+            <p class="text-gray-700 px-4 mb-4">
+                Experience The Next Generation Of Digital Art Auctions Where Your Bids Are Secured On The Blockchain, <br />
+                Ensuring Authenticity And Transparency. Trust In A Decentralized Platform That Prioritizes <br />Your Security And Ownership.
+            </p>
+            <div className="flex space-x-4">
+                    <a href="#" className="text-gray-700 hover:text-blue-500">
+                        <FontAwesomeIcon icon={faFacebookF} />
+                    </a>
+                    <a href="#" className="text-gray-700 hover:text-blue-500">
+                        <FontAwesomeIcon icon={faInstagram} />
+                    </a>
+                    <a href="#" className="text-gray-700 hover:text-blue-500">
+                        <FontAwesomeIcon icon={faYoutube} />
+                    </a>
+                    <a href="#" className="text-gray-700 hover:text-blue-500">
+                        <FontAwesomeIcon icon={faTwitter} />
+                    </a>
+                    <a href="#" className="text-gray-700 hover:text-blue-500">
+                        <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                </div>
+        </div>
+        <p class="mt-4 text-gray-600">©Name 2024</p>
+    </footer>
+
         </main>
       </div>
       </>
