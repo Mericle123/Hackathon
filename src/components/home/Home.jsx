@@ -1,10 +1,7 @@
 //hackathon home
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
 import Navbar from '../navbar'; 
-import { faFacebookF, faInstagram, faYoutube, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
-
+import Footer from '../footer';
 import "./Home.css"
 class NFTGallery extends React.Component {
   render() {
@@ -26,25 +23,14 @@ class NFTGallery extends React.Component {
     <Navbar /> 
     </div>
       <div className="bg-gray-100 min-h-screen">
-        <header className="p-4 bg-white shadow-md">
-          <div className="text-lg font-bold">LOGO</div>
-          <nav >
-            <button className="mr-4">Create</button>
-            <button className='mr-4'>Owned NFT</button>
-          </nav>
-          <button className="bg-black text-white px-4 py-2 rounded ml">Connect Wallet</button>
-          <button className="bg-black text-white px-4 py-2 rounded">
-            <FontAwesomeIcon icon={faUser} className="mr-2" />
-          </button>
-        </header>
         <main className="p-4">
           <section className="mb-8">
             <h2 className="text-xl font-semibold mb-4">Trending in Gaming</h2>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-4 gap-4">
               {nfts.slice(0, 8).map((nft, index) => (
                 <div key={index} className="bg-white p-4 rounded-lg shadow-md">
                   <img src={nft.image} alt={nft.title} className="h-48 w-full object-cover mb-2 rounded" />
-                  <h3 className="font-medium">{nft.title}</h3>
+                  <h3 className="font-large"><strong>{nft.title}</strong></h3>
                   <p>Floor: {nft.floor}</p>
                   <p>24h Volume: {nft.volume}</p>
                 </div>
@@ -53,7 +39,7 @@ class NFTGallery extends React.Component {
           </section>
           <section>
             <h2 className="text-xl font-semibold mb-4">Trending in Art</h2>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-4 gap-4">
               {nfts.slice(0, 8).map((nft, index) => (
                 <div key={index} className="bg-white p-4 rounded-lg shadow-md">
                   <img src={nft.image} alt={nft.title} className="h-48 w-full object-cover mb-2 rounded" />
@@ -64,35 +50,11 @@ class NFTGallery extends React.Component {
               ))}
             </div>
           </section>
-    <footer class="bg-gray-200 border-t border-blue-400 py-8 text-center mt-3">
-        <div class="flex flex-col items-center">
-            <div class="w-16 h-16 bg-black rounded-full mb-4"></div>
-            <p class="text-gray-700 px-4 mb-4">
-                Experience The Next Generation Of Digital Art Auctions Where Your Bids Are Secured On The Blockchain, <br />
-                Ensuring Authenticity And Transparency. Trust In A Decentralized Platform That Prioritizes <br />Your Security And Ownership.
-            </p>
-            <div className="flex space-x-4">
-                    <a href="#" className="text-gray-700 hover:text-blue-500">
-                        <FontAwesomeIcon icon={faFacebookF} />
-                    </a>
-                    <a href="#" className="text-gray-700 hover:text-blue-500">
-                        <FontAwesomeIcon icon={faInstagram} />
-                    </a>
-                    <a href="#" className="text-gray-700 hover:text-blue-500">
-                        <FontAwesomeIcon icon={faYoutube} />
-                    </a>
-                    <a href="#" className="text-gray-700 hover:text-blue-500">
-                        <FontAwesomeIcon icon={faTwitter} />
-                    </a>
-                    <a href="#" className="text-gray-700 hover:text-blue-500">
-                        <FontAwesomeIcon icon={faGithub} />
-                    </a>
-                </div>
-        </div>
-        <p class="mt-4 text-gray-600">©Name 2024</p>
-    </footer>
-
+          
         </main>
+        <div >
+            <Footer/>
+          </div>
       </div>
       </>
     );
