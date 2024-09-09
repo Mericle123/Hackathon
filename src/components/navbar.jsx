@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import logo from '../assets/Frame 2.png'; // Replace with the actual path to your logo
 
 const Navbar = () => {
@@ -6,10 +7,10 @@ const Navbar = () => {
     <nav className="bg-[#F2F2F2] py-4 px-6 flex items-center justify-between">
       <div className="flex items-center">
         <img src={logo} alt="Logo" className="h-8 mr-3" />
-        <a href="#" className="text-xl font-semibold text-[#212121]">LOGO</a>
+        <Link to="/" className="text-xl font-semibold text-[#212121]">LOGO</Link>
         <div className="hidden md:flex space-x-6 ml-12">
-          <a href="#" className="text-[#757575] hover:text-black font-medium">Create</a>
-          <a href="#" className="text-[#757575] hover:text-black font-medium">Owned NFT</a>
+          <Link to="/create" className="text-[#757575] hover:text-black font-medium">Create</Link>
+          <Link to="/nft" className="text-[#757575] hover:text-black font-medium">Owned NFT</Link>
         </div>
       </div>
       <div className="flex items-center">

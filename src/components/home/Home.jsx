@@ -2,6 +2,7 @@
 import React from 'react';
 import Navbar from '../navbar'; 
 import Footer from '../footer';
+import CreateNFT from '../create/Create.jsx';
 import "./Home.css"
 class NFTGallery extends React.Component {
   render() {
@@ -56,7 +57,9 @@ class NFTGallery extends React.Component {
             <Footer/>
           </div>
       </div>
+      
       </>
+      
     );
   }
 }
